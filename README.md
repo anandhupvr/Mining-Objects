@@ -1,6 +1,8 @@
 # Mining-Objects
 Mining Objects: Fully Unsupervised Object Discovery and Localization From a Single Image
 https://arxiv.org/pdf/1902.09968.pdf
+unsupervised object discovery and localization in a
+strictly general setting where only a single image is given
 
 Not implemented fully :/ But working :)
 
