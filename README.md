@@ -17,3 +17,6 @@ python run.py path_to_img
   <img src="imgs/result1.png" width="300">
   <img src="imgs/result2.png" width="300">
 </p>
+
+# Version
+TF 2.0
