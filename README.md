@@ -4,9 +4,9 @@ https://arxiv.org/pdf/1902.09968.pdf
 unsupervised object discovery and localization in a
 strictly general setting where only a single image is given
 
-Not implemented fully :/ But working :)
+Not fully implemented :/ But working :)
 
-# How to Use
+# Usage
 ```
 python run.py path_to_img
 ```
