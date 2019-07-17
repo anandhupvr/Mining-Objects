@@ -33,15 +33,13 @@ for i in range(len(li)):
 freq = apriori.run(pixel, 20)
 # print (freq)
 mk = [eval(i) for i in freq]
-support = np.zeros([14, 14, 1024])
-for f in range(1024):
-	for i in range(14):
-		for j in range(14):
-			if [i, j] in mk:
-				support[i, j] = feature_map[i, j, f]
+support = np.zeros([14, 14])
+for i in range(14):
+	for j in range(14):
+		if [i, j] in mk:
+			support[i, j] = np.array(feature_map[i, j, :]).sum()/1024
 
 
-# import pdb; pdb.set_trace()
 # last_conv_output = np.squeeze(feature_map)
 # import scipy
 # pred = np.argmax(pred_vec)
@@ -74,4 +72,4 @@ for i in range(len(objs)):
 
 img = cv2.imread(im_dir, cv2.IMREAD_UNCHANGED)
 org_img = cv2.resize(img, (224, 224))
-bbox_plot(org_img, box, new)
+bbox_plot(org_img, box, support)
